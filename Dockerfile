@@ -22,11 +22,14 @@ COPY --from=build /src/.next/standalone ./
 COPY --from=build /src/.next/static ./.next/static
 COPY --from=build /src/public ./public
 
-# Prisma: schema + migrations + the CLI for `migrate deploy` at startup
+# Prisma: schema + migrations + the CLI for `migrate deploy` at startup.
+# Invoke the CLI at its real path (not the .bin shim): COPY dereferences the
+# .bin symlink into a stray file, and Prisma 7+ loads its WASM engines
+# relative to the CLI's own location — the shim copy crashes with
+# ENOENT prisma_schema_build_bg.wasm before the server starts.
 COPY --from=build /src/prisma ./prisma
 COPY --from=build /src/node_modules/prisma ./node_modules/prisma
 COPY --from=build /src/node_modules/@prisma ./node_modules/@prisma
-COPY --from=build /src/node_modules/.bin/prisma ./node_modules/.bin/prisma
 
 EXPOSE 3000
-CMD ["sh", "-c", "npx prisma migrate deploy && node server.js"]
+CMD ["sh", "-c", "node node_modules/prisma/build/index.js migrate deploy && node server.js"]

@@ -99,7 +99,7 @@ So let it do the seeding:
 1. Make your `prisma/seed.ts` **idempotent** — use `upsert`, so running twice is safe
 2. In the Dockerfile's last line, add the seed between migrate and start:
    ```dockerfile
-   CMD ["sh", "-c", "npx prisma migrate deploy && npx prisma db seed && node server.js"]
+   CMD ["sh", "-c", "node node_modules/prisma/build/index.js migrate deploy && node node_modules/prisma/build/index.js db seed && node server.js"]
    ```
 3. Push. Your app seeds itself on startup. Remove the clause later — or leave it (it's
    idempotent); decide deliberately and say why in the commit message.
