@@ -104,6 +104,35 @@ So let it do the seeding:
 3. Push. Your app seeds itself on startup. Remove the clause later — or leave it (it's
    idempotent); decide deliberately and say why in the commit message.
 
+## Need an API key or other setting in production?
+
+Your `.env` file does not deploy (good — it's gitignored). If your app needs an
+environment variable in production — an API key for a weather service, a config
+value, anything you read with `process.env` — **don't ask the instructor and don't
+paste keys into your code.** There's a skill for it.
+
+Copy the skill folder from this repo into yours, same paths-matter rule as step 1:
+
+```text
+your-capstone/
+├── .claude/
+│   └── skills/
+│       └── add-env-var/
+│           └── SKILL.md          ← copy from this repo, exactly this path
+```
+
+Then just tell Claude Code what you need, in your own words:
+
+> "My app needs OPENWEATHER_API_KEY in production — here's the key: ..."
+
+Claude knows the class platform and will make the right edits (and tell you the
+one thing only you can do: pasting the key into your repo's **Secrets** tab).
+Two rules it will also enforce, worth knowing yourself:
+
+- **Never commit a key** — not in code, not in the Dockerfile, not in `deploy.yml`.
+- **Never touch** `DATABASE_URL`, `AUTH_SECRET`, `AUTH_URL`, `PORT`, or
+  `HOSTNAME` — the platform sets those for you.
+
 ## Watching your app (read access)
 
 You each got an Azure invitation by email. Accept it, then at **portal.azure.com**:
