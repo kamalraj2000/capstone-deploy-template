@@ -1,0 +1,66 @@
+{
+  "foundLawyer": true,
+  "firstName": "Margaret",
+  "lastName": "Alvarez",
+  "fullName": "Margaret Alvarez",
+  "jobTitle": "Partner",
+  "estimatedAge": null,
+  "description": "Partner in Whitfield & Grant's New York office and co-chair of the firm's Private Equity practice, advising strategic acquirers and private equity sponsors on complex domestic and cross-border transactions.",
+  "country": "United States",
+  "stateOrProvince": "New York",
+  "city": "New York",
+  "degrees": [
+    {
+      "degreeName": "J.D.",
+      "institution": "Columbia Law School",
+      "year": 2004,
+      "majors": [],
+      "minors": [],
+      "honors": "Harlan Fiske Stone Scholar"
+    },
+    {
+      "degreeName": "B.A.",
+      "institution": "Cornell University",
+      "year": 1999,
+      "majors": ["Economics"],
+      "minors": ["Spanish"],
+      "honors": "magna cum laude"
+    }
+  ],
+  "practiceAreas": ["Corporate", "Mergers & Acquisitions", "Private Equity"],
+  "normalizedPracticeAreas": ["Corporate", "Mergers & Acquisitions", "Private Equity"],
+  "mattersAndDeals": [
+    "Represented a global beverage company in its $2.1 billion acquisition of a functional-drinks startup",
+    "Advised a private equity sponsor on the take-private of a NASDAQ-listed software company"
+  ],
+  "leadershipPositions": [
+    "Co-chair, Private Equity practice",
+    "Member, Executive Committee"
+  ],
+  "awards": [
+    {
+      "title": "Chambers USA — Corporate/M&A",
+      "organization": "Chambers and Partners",
+      "year": 2023
+    },
+    {
+      "title": "Dealmaker of the Year",
+      "organization": "The American Lawyer",
+      "year": 2021
+    }
+  ],
+  "barAdmissions": ["New York"],
+  "courts": [],
+  "priorExperiences": [
+    {
+      "firmName": "Kellerman Roth LLP",
+      "fromYear": 2004,
+      "toYear": 2011,
+      "jobTitle": "Associate"
+    }
+  ],
+  "phoneNumber": "+1 (212) 555-0142",
+  "email": "m.alvarez@whitfieldgrant.example.com",
+  "isPartner": true,
+  "jobType": "Partner"
+}
