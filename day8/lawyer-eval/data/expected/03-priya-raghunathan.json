@@ -1,0 +1,68 @@
+{
+  "foundLawyer": true,
+  "firstName": "Priya",
+  "lastName": "Raghunathan",
+  "fullName": "Priya Raghunathan",
+  "jobTitle": "Of Counsel",
+  "estimatedAge": null,
+  "description": "Of Counsel in Hale & Dorsey's San Francisco office practicing IP litigation, patent prosecution, and technology transactions, with a focus on semiconductor and machine-learning technologies.",
+  "country": "United States",
+  "stateOrProvince": "California",
+  "city": "San Francisco",
+  "degrees": [
+    {
+      "degreeName": "J.D.",
+      "institution": "University of California, Berkeley, School of Law",
+      "year": 2008,
+      "majors": [],
+      "minors": [],
+      "honors": null
+    },
+    {
+      "degreeName": "B.S.",
+      "institution": "Indian Institute of Technology Madras",
+      "year": 2003,
+      "majors": ["Computer Science"],
+      "minors": [],
+      "honors": null
+    }
+  ],
+  "practiceAreas": ["IP Litigation", "Patent Prosecution", "Tech Transactions"],
+  "normalizedPracticeAreas": [
+    "Intellectual Property Litigation",
+    "Patent Prosecution",
+    "Technology Transactions"
+  ],
+  "mattersAndDeals": [],
+  "leadershipPositions": [],
+  "awards": [
+    {
+      "title": "IP Star",
+      "organization": "Managing IP",
+      "year": 2022
+    }
+  ],
+  "barAdmissions": ["California"],
+  "courts": [
+    "U.S. District Court for the Northern District of California",
+    "U.S. Court of Appeals for the Federal Circuit"
+  ],
+  "priorExperiences": [
+    {
+      "firmName": "United States Patent and Trademark Office",
+      "fromYear": 2003,
+      "toYear": 2005,
+      "jobTitle": "Patent Examiner"
+    },
+    {
+      "firmName": "Crestview LLP",
+      "fromYear": 2008,
+      "toYear": 2016,
+      "jobTitle": "Associate"
+    }
+  ],
+  "phoneNumber": null,
+  "email": "praghunathan@haledorsey.example.com",
+  "isPartner": false,
+  "jobType": "Counsel"
+}

@@ -1,0 +1,44 @@
+{
+  "foundLawyer": true,
+  "firstName": "Daniel",
+  "lastName": "Okafor",
+  "fullName": "Daniel Okafor",
+  "jobTitle": "Senior Associate",
+  "estimatedAge": null,
+  "description": "Senior associate in Brightline Legal's Chicago office handling high-stakes commercial litigation and product liability matters, and pro bono coordinator for the office.",
+  "country": "United States",
+  "stateOrProvince": "Illinois",
+  "city": "Chicago",
+  "degrees": [
+    {
+      "degreeName": "J.D.",
+      "institution": "Loyola University Chicago School of Law",
+      "year": null,
+      "majors": [],
+      "minors": [],
+      "honors": null
+    },
+    {
+      "degreeName": "B.A.",
+      "institution": "University of Illinois Urbana-Champaign",
+      "year": null,
+      "majors": ["Psychology"],
+      "minors": [],
+      "honors": null
+    }
+  ],
+  "practiceAreas": ["commercial litigation", "product liability"],
+  "normalizedPracticeAreas": ["Commercial Litigation", "Product Liability"],
+  "mattersAndDeals": [],
+  "leadershipPositions": [
+    "Pro bono coordinator, Brightline Legal Chicago office"
+  ],
+  "awards": [],
+  "barAdmissions": ["Illinois"],
+  "courts": ["U.S. District Court for the Northern District of Illinois"],
+  "priorExperiences": [],
+  "phoneNumber": null,
+  "email": null,
+  "isPartner": false,
+  "jobType": "Senior Associate"
+}

@@ -1,0 +1,51 @@
+{
+  "foundLawyer": true,
+  "firstName": "James",
+  "lastName": "Whitcombe",
+  "fullName": "James Whitcombe",
+  "jobTitle": "Managing Associate",
+  "estimatedAge": null,
+  "description": "Managing Associate in Ashworth Piper's London office advising lenders, sponsors and corporates on banking & finance and restructuring matters, with particular experience in syndicated lending and special situations.",
+  "country": "United Kingdom",
+  "stateOrProvince": "England",
+  "city": "London",
+  "degrees": [
+    {
+      "degreeName": "LL.B.",
+      "institution": "King's College London",
+      "year": 2012,
+      "majors": [],
+      "minors": [],
+      "honors": "first-class honours"
+    },
+    {
+      "degreeName": "Legal Practice Course",
+      "institution": "BPP Law School",
+      "year": 2013,
+      "majors": [],
+      "minors": [],
+      "honors": null
+    }
+  ],
+  "practiceAreas": ["banking & finance", "restructuring"],
+  "normalizedPracticeAreas": ["Banking & Finance", "Restructuring"],
+  "mattersAndDeals": [
+    "Advised the syndicate lenders on the £450 million refinancing of a UK retail group"
+  ],
+  "leadershipPositions": [],
+  "awards": [],
+  "barAdmissions": ["Solicitor of the Senior Courts of England and Wales"],
+  "courts": [],
+  "priorExperiences": [
+    {
+      "firmName": "Mercer & Locke LLP",
+      "fromYear": 2013,
+      "toYear": 2018,
+      "jobTitle": "Associate"
+    }
+  ],
+  "phoneNumber": "+44 20 7946 0958",
+  "email": "james.whitcombe@ashworthpiper.example.co.uk",
+  "isPartner": false,
+  "jobType": "Managing Associate"
+}

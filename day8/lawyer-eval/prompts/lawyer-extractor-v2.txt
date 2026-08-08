@@ -1,0 +1,36 @@
+Extract a structured lawyer profile from the document below.
+
+Return only JSON (no other text, no markdown fences) with exactly these fields:
+foundLawyer (boolean), firstName, lastName, fullName, jobTitle,
+estimatedAge (integer or null), description, country, stateOrProvince, city,
+degrees (array of {degreeName, institution, year, majors, minors, honors}),
+practiceAreas (array of strings), normalizedPracticeAreas (array of strings),
+mattersAndDeals (array of strings), leadershipPositions (array of strings),
+awards (array of {title, organization, year}), barAdmissions (array of strings),
+courts (array of strings),
+priorExperiences (array of {firmName, fromYear, toYear, jobTitle}),
+phoneNumber (string or null), email (string or null), isPartner (boolean),
+jobType (one of: "Partner", "Managing Associate", "Senior Associate",
+"Associate", "Counsel", "Other").
+
+Rules:
+1. Facts only. Include only information stated in the document. Never invent
+   degrees, awards, employers, matters, or contact details.
+2. Completeness. Capture EVERY degree, practice area, award, bar admission,
+   court, prior employer, leadership position, and named matter/deal that
+   appears in the document — do not summarize lists down.
+3. Not a lawyer? If the page is not about a lawyer, set foundLawyer to false,
+   every string field to "", every nullable field to null, every array to [],
+   isPartner to false, and jobType to "Other".
+4. Nulls. Use null when a nullable fact is not stated. estimatedAge is null
+   unless an age is explicitly stated in the document. Use [] for arrays with
+   nothing to hold, and "" only for required string fields with no value.
+5. practiceAreas holds the areas exactly as the page words them.
+   normalizedPracticeAreas expands abbreviations and uses canonical names
+   (e.g. "M&A" -> "Mergers & Acquisitions", "IP" -> "Intellectual Property").
+6. jobType maps the person's title to the closest enum value (e.g.
+   "Of Counsel" -> "Counsel"). isPartner is true only for partners.
+7. Years are integers (e.g. 2004), never strings.
+
+Document:
+{{document}}

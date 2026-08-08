@@ -1,0 +1,17 @@
+Extract a structured lawyer profile from the document below.
+
+Return only JSON (no other text) with exactly these fields:
+foundLawyer (boolean), firstName, lastName, fullName, jobTitle,
+estimatedAge (integer or null), description, country, stateOrProvince, city,
+degrees (array of {degreeName, institution, year, majors, minors, honors}),
+practiceAreas (array of strings), normalizedPracticeAreas (array of strings),
+mattersAndDeals (array of strings), leadershipPositions (array of strings),
+awards (array of {title, organization, year}), barAdmissions (array of strings),
+courts (array of strings),
+priorExperiences (array of {firmName, fromYear, toYear, jobTitle}),
+phoneNumber (string or null), email (string or null), isPartner (boolean),
+jobType (one of: "Partner", "Managing Associate", "Senior Associate",
+"Associate", "Counsel", "Other").
+
+Document:
+{{document}}
